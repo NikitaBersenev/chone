@@ -1,0 +1,56 @@
+extends layout
+block content 
+  .row.page-header
+    .col-lg-12
+      h1 Starcups
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.icon-star
+            span.icon-star
+            span.icon-star
+            span.icon-star
+            span.icon-star-empty
+          p 125 High Street, Reading, RG6 1PS
+            .card
+              .card-header 
+                h2 Opening hours
+              .card-body
+                p.card-text Monday - Friday : 7:00am - 7:00pm
+                p.card-text Saturday : 8:00am - 5:00pm
+                p.card-text Sunday : closed
+            .card
+              .card-header 
+                h2 Facilities
+              .card-body
+                p.card-text span.label.label-warning
+                  span.fa.fa-check
+                  | &nbsp;Hot drinks
+                | &nbsp;
+                span.label.label-warning
+                  span.fa.fa-check
+                  | &nbsp;Food
+                | &nbsp;
+                span.label.label-warning
+                  span.fa.fa-check
+                  | &nbsp;Premium wifi
+                | &nbsp;
+            .col-xs-12.col-sm-6.location-map
+              .card
+                .card-header 
+                  h2.panel-title Location map
+                .card-body
+                  img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=51.455041,-0.9690884&zoom=17&size=400x350&sensor=false&markers=51.455041,-0.9690884&scale=2')
+      .row
+        .col-xs-12
+          .card.review-panel
+            .card-header
+              a.btn.btn-default.pull-right(href='/location/review/new') Add review
+              h2.panel-title Customer reviews
+            .card-body
+
+    
+                 
+                
