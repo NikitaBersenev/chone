@@ -1,0 +1,5 @@
+mixin outputRating(rating)
+  - for(var i = 1; i <= rating; i++) 
+    span.icon-star
+  - for(var i = rating; i < 5; i++) 
+    span.icon-star-empty
