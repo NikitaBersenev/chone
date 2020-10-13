@@ -3,139 +3,26 @@ extends layout
 block content
       .text-center
         .display-4.text-center
-          span.text-center Find places to word with wifi near you!
+          span.text-center #{pageHeader.strapline}
       hr
-      .card.bg-dark#cardHome
-        a(href='/location')
-          h4
-            // <a href="/location">Starcups</a/>
-            span.text-primary Starcups
-            span
-              span.icon-star
-              span.icon-star
-              span.icon-star
-              span.icon-star
-              span.icon-star-empty
-            span.badge.float-right.badge-default.text-white
-              | 100m
-          p.address.text-white
-            | 125 High Street, Reading, RG6 1PX
-          p
-            span.badge.badge-secondary
-              | Hot drinks
-            span.badge.badge-secondary
-              | Food
-            span.badge.badge-secondary
-              | Premium WiFi
-      .card.bg-dark#cardHome
-        a(href='/location')
-          h4
-            // <a href="/location">Starcups</a/>
-            span.text-primary Starcups
-            span
-              span.icon-star
-              span.icon-star
-              span.icon-star
-              span.icon-star
-              span.icon-star-empty
-            span.badge.float-right.badge-default.text-white
-              | 100m
-          p.address.text-white
-            | 125 High Street, Reading, RG6 1PX
-          p
-            span.badge.badge-secondary
-              | Hot drinks
-            span.badge.badge-secondary
-              | Food
-            span.badge.badge-secondary
-              | Premium WiFi
-      .card.bg-dark#cardHome
-        a(href='/location')
-          h4
-            // <a href="/location">Starcups</a/>
-            span.text-primary Starcups
-            span
-              span.icon-star
-              span.icon-star
-              span.icon-star
-              span.icon-star
-              span.icon-star-empty
-            span.badge.float-right.badge-default.text-white
-              | 100m
-          p.address.text-white
-            | 125 High Street, Reading, RG6 1PX
-          p
-            span.badge.badge-secondary
-              | Hot drinks
-            span.badge.badge-secondary
-              | Food
-            span.badge.badge-secondary
-              | Premium WiFi
-      .card.bg-dark#cardHome
-        a(href='/location')
-          h4
-            // <a href="/location">Starcups</a/>
-            span.text-primary Starcups
-            span
-              span.icon-star
-              span.icon-star
-              span.icon-star
-              span.icon-star
-              span.icon-star-empty
-            span.badge.float-right.badge-default.text-white
-              | 100m
-          p.address.text-white
-            | 125 High Street, Reading, RG6 1PX
-          p
-            span.badge.badge-secondary
-              | Hot drinks
-            span.badge.badge-secondary
-              | Food
-            span.badge.badge-secondary
-              | Premium WiFi
-      .card.bg-dark#cardHome
-        a(href='/location')
-          h4
-            // <a href="/location">Starcups</a/>
-            span.text-primary Starcups
-            span
-              span.icon-star
-              span.icon-star
-              span.icon-star
-              span.icon-star
-              span.icon-star-empty
-            span.badge.float-right.badge-default.text-white
-              | 100m
-          p.address.text-white
-            | 125 High Street, Reading, RG6 1PX
-          p
-            span.badge.badge-secondary
-              | Hot drinks
-            span.badge.badge-secondary
-              | Food
-            span.badge.badge-secondary
-              | Premium WiFi
-      .card.bg-dark#cardHome
-        a(href='/location')
-          h4
-            // <a href="/location">Starcups</a/>
-            span.text-primary Starcups
-            span
-              span.icon-star
-              span.icon-star
-              span.icon-star
-              span.icon-star
-              span.icon-star-empty
-            span.badge.float-right.badge-default.text-white
-              | 100m
-          p.address.text-white
-            | 125 High Street, Reading, RG6 1PX
-          p
-            span.badge.badge-secondary
-              | Hot drinks
-            span.badge.badge-secondary
-              | Food
-            span.badge.badge-secondary
-              | Premium WiFi
+      each location in locations 
+        .card.bg-dark#cardHome
+          a(href='/location')
+            h4
+              // <a href="/location">Starcups</a/>
+              span.text-primary= location.name 
+              |&nbsp;
+              span
+                //- - for(var i = 1; i <= location.rating; i++) 
+                //-   span.icon-star
+                //- - for(car i = location.rating; i < 5; i++) 
+                //-   span.icon-star-empty
+                span.icon-star
+              span.badge.float-right.badge-default.text-white= location.distance
+            p.address.text-white= location.address
+            p
+              each facility in location.facilities
+                span.badge.badge-secondary= facility 
+     
       
   
