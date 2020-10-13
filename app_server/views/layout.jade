@@ -3,13 +3,16 @@ html
   head
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+
     //- link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/bootstrap/css/cyborg.bootstrap.min.css')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
     link(rel='stylesheet', href='/open-iconic-master/font/css/open-iconic-bootstrap.min.css')
     link(rel='stylesheet', href='/open-iconic-master/font/css/open-iconic.css') 
     //- link(href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css' rel='stylesheet')
     link(href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css' rel='stylesheet')
+    link(rel='stylesheet' href='/Libs/fontawesome-free-5.15.1-web/css/fontawesome.min.css') 
+    link(rel='stylesheet' href='/javascripts/leaflet/leaflet.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
   body
     //- .navbar.navbar-default.navbar-fixed-top
       .container
@@ -35,31 +38,16 @@ html
           ul.nav.navbar-nav
             li
               a(href='/about/') About
-    nav.navbar.navbar-expand-lg.navbar-light.bg-light
-      a.navbar-brand(href='#') Loc8r
-      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-      #navbarSupportedContent.collapse.navbar-collapse
-        ul.navbar-nav.mr-auto
-          li.nav-item.active
-            a.nav-link(href='#')
-              | Home 
+    nav.navbar.navbar-expand-lg.navbar-light.text-white.bg-dark
+      a.navbar-brand.text-white(href='/') Loc8r
+      button.navbar-toggler.text-white(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon.text-white
+      #navbarSupportedContent.collapse.navbar-collapse.text-white
+        ul.navbar-nav.mr-auto.text-white
+          li.nav-item.active.text-white
+            a.nav-link.text-white(href='#')
+              | About 
               span.sr-only (current)
-          li.nav-item
-            a.nav-link(href='#') Link
-          li.nav-item.dropdown
-            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-              | Pages
-            .dropdown-menu(aria-labelledby='navbarDropdown')
-              a.dropdown-item(href='#') Action
-              a.dropdown-item(href='#') Another action
-              .dropdown-divider
-              a.dropdown-item(href='#') Something else here
-          li.nav-item
-            a.nav-link.disabled(href='#') About
-        form.form-inline.my-2.my-lg-0
-          input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
-          button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
 
           
     .container
@@ -76,3 +64,5 @@ html
             small &copy; Simon Holmes 2014
     script(src="/javascripts/jquery-2.x-git.min.js")
     script(src="/bootstrap/js/bootstrap.min.js")
+    script(src="/javascripts/leaflet/leaflet.js")
+    script(src="/javascripts/script.js")

@@ -1,0 +1,28 @@
+
+extends layout
+block content
+   
+      .text-center
+        .display-4.text-center
+          span.text-center Review Starcups
+      hr
+      form
+        .form-group.row
+          label.col-sm-2.col-form-label(for='inputPassword') Name
+          .col-sm-10
+            input#inputPassword.form-control
+        .form-group.row
+          label.col-sm-2.col-form-label(for='inputPassword') Rating
+          .col-sm-3
+            select#inputState.form-control
+              option 1
+              option 2
+              option 3
+              option 4
+              option(selected='') 5
+        .form-group.row
+          label.col-sm-2.col-form-label(for='inputPassword') Review
+          .col-sm-10
+            textarea.form-control(aria-label='With textarea')
+        a.btn.btn-primary.float-right(href='#') Add Review
+  

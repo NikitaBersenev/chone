@@ -1,56 +1,107 @@
+ 
 extends layout
-block content 
-  .row.page-header
-    .col-lg-12
-      h1 Starcups
-  .row
-    .col-xs-12.col-md-9
+block content
+      .text-center
+        .display-4.text-center
+          span.text-center Starcups
+          hr
       .row
-        .col-xs-12.col-sm-6
-          p.rating
+        .col-sm-6
+          p
             span.icon-star
             span.icon-star
             span.icon-star
             span.icon-star
             span.icon-star-empty
-          p 125 High Street, Reading, RG6 1PS
-            .card
-              .card-header 
-                h2 Opening hours
-              .card-body
-                p.card-text Monday - Friday : 7:00am - 7:00pm
-                p.card-text Saturday : 8:00am - 5:00pm
-                p.card-text Sunday : closed
-            .card
-              .card-header 
-                h2 Facilities
-              .card-body
-                p.card-text span.label.label-warning
-                  span.fa.fa-check
-                  | &nbsp;Hot drinks
-                | &nbsp;
-                span.label.label-warning
-                  span.fa.fa-check
-                  | &nbsp;Food
-                | &nbsp;
-                span.label.label-warning
-                  span.fa.fa-check
-                  | &nbsp;Premium wifi
-                | &nbsp;
-            .col-xs-12.col-sm-6.location-map
-              .card
-                .card-header 
-                  h2.panel-title Location map
-                .card-body
-                  img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=51.455041,-0.9690884&zoom=17&size=400x350&sensor=false&markers=51.455041,-0.9690884&scale=2')
+          p 125 High Street, Reading, RG6 1PX
+          // Card 1
+          .card
+            h5.card-header.p-2 Opening hours
+            .card-body.p-2
+              p Monday - Friday : 7:00am - 7:00pm
+              p Saturday : 8:00pm - 5:00pm
+              p Sunday : closed
+          // Card 2
+          .card.mt-2
+            h5.card-header Facilities
+            h5.card-title.p-2
+              span.badge.badge-secondary Hot drinks
+              span.badge.badge-secondary Food
+              span.badge.badge-secondary Premium wifi
+        // Card 3
+        .card.col-sm-6.p-0
+          h5.card-header Location Map
+          #mapid.card-body
       .row
-        .col-xs-12
-          .card.review-panel
-            .card-header
-              a.btn.btn-default.pull-right(href='/location/review/new') Add review
-              h2.panel-title Customer reviews
-            .card-body
-
-    
-                 
-                
+        .container
+          // Card 4
+          .card.mt-2
+            h5.card-header.p-2
+              | Customer reviews
+              a.btn.btn-primary.float-right(href='/location/review/new') Add Review
+            h5.card-title.p-2
+              span.icon-star
+              span.icon-star
+              span.icon-star
+              span.icon-star
+              span.icon-star-empty
+              |                         125 High Street, Reading, RG6 1PX
+            p.card-text.p-2
+              | What a great place. I can't say enough good things
+          // Card 4
+          .card.mt-2
+            h5.card-header.p-2
+              | Customer reviews
+              a.btn.btn-primary.float-right(href='/location/review/new') Add Review
+            h5.card-title.p-2
+              span.icon-star
+              span.icon-star
+              span.icon-star
+              span.icon-star
+              span.icon-star-empty
+              |                         125 High Street, Reading, RG6 1PX
+            p.card-text.p-2
+              | What a great place. I can't say enough good things
+          // Card 4
+          .card.mt-2
+            h5.card-header.p-2
+              | Customer reviews
+              a.btn.btn-primary.float-right(href='/location/review/new') Add Review
+            h5.card-title.p-2
+              span.icon-star
+              span.icon-star
+              span.icon-star
+              span.icon-star
+              span.icon-star-empty
+              |                         125 High Street, Reading, RG6 1PX
+            p.card-text.p-2
+              | What a great place. I can't say enough good things
+          // Card 4
+          .card.mt-2
+            h5.card-header.p-2
+              | Customer reviews
+              a.btn.btn-primary.float-right(href='/location/review/new') Add Review
+            h5.card-title.p-2
+              span.icon-star
+              span.icon-star
+              span.icon-star
+              span.icon-star
+              span.icon-star-empty
+              |                         125 High Street, Reading, RG6 1PX
+            p.card-text.p-2
+              | What a great place. I can't say enough good things
+          // Card 4
+          .card.mt-2
+            h5.card-header.p-2
+              | Customer reviews
+              a.btn.btn-primary.float-right(href='/location/review/new') Add Review
+            h5.card-title.p-2
+              span.icon-star
+              span.icon-star
+              span.icon-star
+              span.icon-star
+              span.icon-star-empty
+              |                         125 High Street, Reading, RG6 1PX
+            p.card-text.p-2
+              | What a great place. I can't say enough good things
+  

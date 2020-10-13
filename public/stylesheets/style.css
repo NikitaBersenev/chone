@@ -1,8 +1,21 @@
-/* body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.card {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
 }
 
 a {
-  color: #00B7FF;
-} */
+  text-decoration: none !important;
+}
+
+#cardHome:hover{
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+#cardHome:hover::after{
+  opacity: 0;
+}
+ 
