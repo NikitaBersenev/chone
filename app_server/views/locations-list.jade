@@ -13,11 +13,11 @@ block content
               span.text-primary= location.name 
               |&nbsp;
               span
-                //- - for(var i = 1; i <= location.rating; i++) 
-                //-   span.icon-star
-                //- - for(car i = location.rating; i < 5; i++) 
-                //-   span.icon-star-empty
-                span.icon-star
+                - for(var i = 1; i <= location.rating; i++) 
+                  span.icon-star
+                - for(var i = location.rating; i < 5; i++) 
+                  span.icon-star-empty
+                
               span.badge.float-right.badge-default.text-white= location.distance
             p.address.text-white= location.address
             p
